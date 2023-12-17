@@ -1,0 +1,22 @@
+!define BLANK ""
+D:\WAT32_MY\CUBE3DTW\Mesh.obj : D:\WAT32_MY\CUBE3DTW\Mesh.cpp .AUTODEPEND
+ @D:
+ cd D:\WAT32_MY\CUBE3DTW
+ *wpp386 Mesh.cpp -i="C:\WATCOM/h" -w4 -e25 -zq -od -d2 -6r -bt=dos -fo=.obj&
+ -mf -xs -xr
+
+D:\WAT32_MY\CUBE3DTW\MyApp.obj : D:\WAT32_MY\CUBE3DTW\MyApp.cpp .AUTODEPEND
+ @D:
+ cd D:\WAT32_MY\CUBE3DTW
+ *wpp386 MyApp.cpp -i="C:\WATCOM/h" -w4 -e25 -zq -od -d2 -6r -bt=dos -fo=.ob&
+j -mf -xs -xr
+
+D:\WAT32_MY\CUBE3DTW\CUBE3DTW.exe : D:\WAT32_MY\CUBE3DTW\Mesh.obj D:\WAT32_M&
+Y\CUBE3DTW\MyApp.obj D:\WAT32_MY\CUBE3DTW\Mesh.h .AUTODEPEND
+ @D:
+ cd D:\WAT32_MY\CUBE3DTW
+ @%write CUBE3DTW.lk1 FIL Mesh.obj,MyApp.obj
+ @%append CUBE3DTW.lk1 
+ *wlink name CUBE3DTW d all sys dos4g op m op maxe=25 op q op symf @CUBE3DTW&
+.lk1
+
