@@ -1,4 +1,4 @@
-# watcom19-3d
+# ms-dos-watcom19-3d
 
 Project for WATCOM 1.9 dos4gw.exe extender for MS-DOS.
 
