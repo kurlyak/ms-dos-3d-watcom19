@@ -1,6 +1,6 @@
 Open Watcom Linker Version 1.9
 Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
-Created on:       23/12/16 18:08:25
+Created on:       98/01/03 00:57:41
 Executable Image: CUBE3DTW.exe
 creating a DOS/4G executable
 
@@ -55,7 +55,7 @@ STACK                  STACK          DGROUP         0002:00002080   00010000
 Address        Symbol
 =======        ======
 
-Module: Mesh.obj(D:\WAT32_MY\CUBE3DTW\Mesh.cpp)
+Module: Mesh.obj(C:\CUBE3DTW\Mesh.cpp)
 0001:00002ae1+ near matrix4x4::matrix4x4()
 0001:00002b0e+ near matrix4x4::~matrix4x4()
 0001:00000010+ void near CMeshManager::Load_BMP()
@@ -68,14 +68,14 @@ Module: Mesh.obj(D:\WAT32_MY\CUBE3DTW\Mesh.cpp)
 0001:00001fd2  void near CMeshManager::DrawCube()
 0001:00002184+ void near CMeshManager::Draw_Textured_Triangle( vector3, tex_coord2, vector3, tex_coord2, vector3, tex_coord2 )
 0001:000028cb+ void near CMeshManager::Draw_Textured_Poly( int, int )
-Module: MyApp.obj(D:\WAT32_MY\CUBE3DTW\MyApp.cpp)
+Module: MyApp.obj(C:\CUBE3DTW\MyApp.cpp)
 0001:00002b8f+ void near Wait_For_Vsync()
 0001:00002bce  main_
 Module: C:\WATCOM/lib386/dos\clib3r.lib(stk)
-0001:00002d9b* __STK
-0001:00002d88  __CHK
-0001:00002d98* __GRO
-0001:00002db9* __STKOVERFLOW_
+0001:00002da3* __STK
+0001:00002d90  __CHK
+0001:00002da0* __GRO
+0001:00002dc1* __STKOVERFLOW_
 Module: C:\WATCOM/lib386/dos\clib3r.lib(fopen.c)
 0001:00002dd0+ __open_flags_
 0001:00002fd0+ _fsopen_
@@ -579,4 +579,4 @@ C:\WATCOM/lib386\plbx3r.lib
 Stack size:  00010000 (65536.)
 Memory size:  0001fbdb (130011.)
 Entry point address: 0001:000037b4
-Link time: 00:00.32
+Link time: 00:00.40

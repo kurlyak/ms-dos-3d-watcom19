@@ -1,5 +1,6 @@
 //======================================================================================
-//      Ed Kurlyak 2020 Perspective Texturemapping
+//      Ed Kurlyak 2023 Perspective Correct Texturemapping
+//      WATCOM 1.9 C++ Source Code
 //======================================================================================
 
 #ifndef _MESHMANAGER_

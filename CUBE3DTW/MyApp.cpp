@@ -1,5 +1,6 @@
 //======================================================================================
-//      Ed Kurlyak 2020 Perspective Texturemapping
+//      Ed Kurlyak 2023 Perspective Correct Texturemapping
+//      WATCOM 1.9 C++ Source Code
 //======================================================================================
 
 #include <dos.h>
@@ -48,7 +49,6 @@ int main ()
     while(!kbhit())
     {
 
-        //Wait_For_Vsync();
         memset(my_video_buffer,0,307200);
 
         MeshManager.CalculateCube();
@@ -90,5 +90,7 @@ int main ()
             int 10h;  //set video mode call interrupt
         }
 
+    delete [] my_video_buffer;
+    
     return 0;
 }
